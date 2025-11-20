@@ -20,6 +20,14 @@ A Retrieval-Augmented Generation (RAG) system for querying software requirements
 
 ## Installation
 
+### Prerequisites
+- Python 3.8 or higher
+- 4GB+ RAM
+- ~1GB disk space for models
+- **Internet connection** (required for first-time model download)
+
+### Setup Steps
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/ckelly39/ReqMind-RAG.git
@@ -30,6 +38,17 @@ cd ReqMind-RAG
 ```bash
 pip install -r requirements.txt
 ```
+
+3. **Download models** (one-time, requires internet):
+```bash
+python setup.py
+```
+
+This downloads:
+- Sentence Transformer embedding model (~100MB)
+- FLAN-T5 language model (~300MB)
+
+**Note**: After initial setup, the system can run completely offline as models are cached locally.
 
 ## Quick Start
 
